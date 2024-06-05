@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bionic Reading Extension</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        width: 300px;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #007bff;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      .highlight-section {
+        margin-top: 20px;
+      }
+      .highlight-section h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        background-color: white;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bionic Reading</h1>
+      <button id="toggleBionic">Toggle Bionic Reading</button>
+      <div class="highlight-section">
+        <h2>Highlighted Text</h2>
+        <ul id="highlightedList"></ul>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
